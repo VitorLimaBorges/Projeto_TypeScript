@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso De TS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Curso de back e front</h2>
+
+        <div x-data="create()">
+            <form x-on:submit.prevent="createUser">
+                <input type="text" name="firstName" x-model="user.firstName">
+                <span id="error-firstName"></span>
+                <input type="text" name="lastName" x-model="user.lastName">
+                <span id="error-lastName"></span>
+                <input type="text" name="email" x-model="user.email">
+                <span id="error-email"></span>
+                <input type="text" name="password" x-model="user.password">
+                <span id="error-password"></span>
+            </form>
+        </div>
+
+    </div>
+    <script src="dist/index.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
